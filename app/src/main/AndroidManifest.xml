@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.JohnZero.lock">
+
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".myLitepalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.JohnZero.lock.MyService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.DetectService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/detection_service_config" />
+        </service>
+        <service
+            android:name=".service.NotificationService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.TimeMasterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PatternLockViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PasswordGeneratorActivity"
+            android:theme="@style/MyDialog" />
+        <activity android:name=".activity.PasswordInfoActivity" />
+        <activity android:name=".activity.PasswordListActivity" />
+        <activity android:name=".activity.HelpActivity" />
+        <activity android:name=".activity.ParameterActivity" />
+        <activity android:name=".activity.UsageLogActivity" />
+        <activity android:name=".activity.LockActivity" />
+        <activity android:name=".activity.IgnoreListActivity" />
+        <activity android:name=".activity.AppInfoActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.PermissionActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:excludeFromRecents="false"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

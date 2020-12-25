@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lock</string>
+    <string name="Q1">获取的权限用于哪些用途？</string>
+    <string name="Q1A">电池优化：降低后台被杀的概率\n辅助功能：获取前台应用名\n显示上层：用于后台弹出锁屏界面\n通知权限：显示通知以保活后台\n通知使用权：检测本应用通知是否被删除\n后台弹出界面：锁屏功能</string>
+    <string name="Q2">什么是子应用？</string>
+    <string name="Q2A">使用已加锁应用时使用了子应用，则子应用的使用时长会被统计到已加锁应用名下，以保证统计使用时长的准确度</string>
+    <string name="Q3">主界面标题有时是Lock，有时显示时间？</string>
+    <string name="Q3A">若显示时间说明服务正常运行，否则点击一下标题开启服务</string>
+</resources>

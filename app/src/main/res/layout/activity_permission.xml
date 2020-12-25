@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="加入电池优化白名单"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:background="#ffffff"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="开启辅助功能查看前台"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:background="#ffffff"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="显示于其它应用上层"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:background="#ffffff"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="获取通知权限"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:background="#ffffff"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="获取通知使用权"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:background="#ffffff"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="后台弹出界面"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:background="#ffffff"
+        android:padding="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activity.TimeMasterActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_rate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="#aaff00">
+
+        <EditText
+            android:id="@+id/et_rate"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:hint="时间汇率：10"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:background="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_rate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:background="@drawable/btn_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_red"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="12时12分12秒"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_blue"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/shape9"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="12时12分12秒"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="12时12分12秒"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</LinearLayout>
